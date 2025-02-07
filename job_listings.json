@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Senior Accountant",
+        "company": "ABC Financial",
+        "location": "New York, NY",
+        "salary": "$85,000 - $95,000",
+        "job_type": "Full-Time",
+        "link": "https://www.indeed.com/viewjob?jk=123456"
+    },
+    {
+        "title": "Remote CPA Consultant",
+        "company": "XYZ Accounting Services",
+        "location": "Remote",
+        "salary": "$50/hr",
+        "job_type": "Contractor",
+        "link": "https://www.indeed.com/viewjob?jk=789012"
+    },
+    {
+        "title": "Financial Controller",
+        "company": "DEF Enterprises",
+        "location": "Austin, TX",
+        "salary": "$110,000 - $130,000",
+        "job_type": "Full-Time",
+        "link": "https://www.indeed.com/viewjob?jk=345678"
+    },
+    {
+        "title": "Part-Time Tax Accountant",
+        "company": "LMN Tax Services",
+        "location": "Chicago, IL",
+        "salary": "$40/hr",
+        "job_type": "Contractor",
+        "link": "https://www.indeed.com/viewjob?jk=901234"
+    }
+]
