@@ -1,0 +1,32 @@
+name: Update Job Listings
+
+on:
+  schedule:
+    - cron: "0 2 * * *"  # Runs at 2 AM UTC daily
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run Job Scraper
+        run: python indeed_job_scraper.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add job_listings.json
+          git commit -m "Auto-update job listings"
+          git push
